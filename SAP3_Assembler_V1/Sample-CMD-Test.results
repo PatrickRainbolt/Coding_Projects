@@ -1,0 +1,57 @@
+> python3 SAP-3_Assembler.py Sample-CMD-Test.asm 
+Loaded program with 118 instructions
+Labels: {'TEST_JMP': 51, 'JUMP_JG': 60, 'JUMP_JZ': 69, 'JUMP_JC': 80}
+
+Starting execution...
+Note  :------------------"Testing LDA:  R0[5] A[5] 0x00[5]  Answer should be 5"
+Output: 5
+Note  :------------------"Testing STA: R1[10] A[10] 0x01[10]  Answer should be 10"
+Output: 10
+Note  :------------------"Testing ADD: R0[3] A[8] 0x02[3]  Answer should be 8"
+Output: 8
+Note  :------------------"Testing SUB: R0[3] A[-2] 0x03[7]  Answer should be -2"
+Output: -2
+Note  :------------------"Testing ADD: R3[3] A[1] 0x04[3]  Answer should be 1"
+Output: 1
+Note  :------------------"Testing OR: R4[2] A[7] 0x05[2]  Answer should be 7"
+Output: 7
+Note  :------------------"Testing XOR: R5[5] A[0] 0x00[5] 0x06[5]  Answer should be 0"
+Output: 0
+Note  :------------------"Testing JMP: R6[42] A[42]  Answer should be 42"
+Output: 42
+Note  :------------------"Testing JG: R7[10] R8[99] A[5] 0x00[5]  Answer should be 5"
+Output: 5
+Note  :------------------"Testing JZ: R0[0] R10[1] A[0] 0x00[5]  Answer should be 0"
+Output: 0
+Note  :------------------"Testing JC: R11[255] R12[0] A[5] 0x00[5] 0x07[255]  Answer should be 0"
+Output: 5
+Note  :------------------"Testing Reg: R13[50] R14[50] A[50]  Answer should be 50"
+Output: 50
+Note  :------------------"Testing Push: R13[50] R15[100] A[100]  Answer should be 100"
+Output: 100
+Note  :------------------"Testing Pop: R13[0]   Answer should be 50"
+Output: 50
+Note  :------------------"Testing LDR: R14[50] R15[25]   Answer should be 25"
+Output: 25
+Note  :------------------"Testing Push: R14[50] R15[30] A[50]  Answer should be 50"
+Output: 50
+Note  :------------------"Testing LDRI: R15[12] A[12]  Answer should be 12"
+Output: 12
+Note  :------------------"Testing LDRI: R0[42] A[42]  Answer should be 42"
+Output: 42
+
+Program execution completed
+
+Accumulator: 42 (0x2A)
+PC: 118, SP: 511
+Flags - Zero: False, Carry: True
+
+Registers:
+R00:  42  (0x2A)  R04:   2  (0x02)  R08:  99  (0x63)  R12:   0  (0x00)  
+R01:  30  (0x1E)  R05:   5  (0x05)  R09:   0  (0x00)  R13:   0  (0x00)  
+R02:   7  (0x07)  R06:  42  (0x2A)  R10:   1  (0x01)  R14:  50  (0x32)  
+R03:   3  (0x03)  R07:  10  (0x0A)  R11: 255  (0xFF)  R15:  12  (0x0C)  
+
+Memory (non-zero values):
+000: 19 0A 03 07 03 02 05 1E 00 00 00 00 00 00 00 00 
+1F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 
