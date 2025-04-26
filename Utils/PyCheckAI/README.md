@@ -124,14 +124,8 @@ Keyword                         Count
 Total Watermarks Detected (including invisible characters): 10
 ```
 
-## License
+---
 
-This tool is licensed under the MIT License.
+## Licensing
 
-## Contributing
-
-If you'd like to contribute to this project, feel free to submit issues or pull requests. Contributions are welcome!
-
-## Author
-
-This project was created by \[Your Name].
+This suite is released under the [MIT License](LICENSE.md).
