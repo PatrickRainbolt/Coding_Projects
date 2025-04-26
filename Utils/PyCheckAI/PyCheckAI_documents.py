@@ -97,29 +97,23 @@ def scan_document(file_path=None, file_type=None, raw_input=None):
     zero_width_count = count_zero_width(text)
 
     # Print the results in a more professional format
-#    print("\n=============================== Watermark Detection ===============================\n")
-
     if watermark_counts or zero_width_count > 0:
         print(f"\nWatermark Summary:\n")
         print(f"{'Keyword':<40}{'Count'}")
         print("-" * 50)
         for watermark, count in watermark_counts.items():
             print(f"* {watermark.capitalize():<38}{count}")
-#        print("-" * 50)
-        
+
         print(f"\nZero-Width:\n")
         print(f"{'Keyword':<40}{'Count'}")
         print("-" * 50)
         
         print(f"{'* Characters Detected:':<40}{zero_width_count}")
-#        print("-" * 50)
 
         total_watermarks = sum(watermark_counts.values()) + zero_width_count
         print(f"\nTotal Watermarks Detected (including invisible characters): {total_watermarks}\n")
     else:
         print("No watermarks found.\n")
-
-#    print("\n=====================================================================================\n")
 
 # Main function to handle command-line input and options
 def main():
