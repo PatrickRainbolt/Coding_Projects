@@ -1,5 +1,3 @@
-Okay, here's the output directly in the chat as you requested:
-
 # Watermark Detection Tool
 
 This Python script scans documents (including \`.txt\`, \`.docx\`, and \`.pdf\` formats) for watermark-like keywords and invisible characters that may be used for watermarking. It can detect standard visible watermarks as well as invisible zero-width characters.
