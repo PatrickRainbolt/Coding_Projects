@@ -108,4 +108,4 @@ You can modify the `original_text` variable in the script to test it with differ
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
