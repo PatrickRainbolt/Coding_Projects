@@ -1,1 +1,3 @@
-tdf
+# Why I Build Python3 Utility Projects
+
+I create Python3 utility projects to solve specific problems efficiently while enhancing my programming skills. Each project is designed to tackle real-world challenges, providing practical solutions that can be directly applied or customized. I believe in the power of open-source contributions, and these utilities are my way of sharing knowledge and making tools available to others. By building these utilities, I get to explore new libraries, frameworks, and programming concepts, pushing myself to continuously learn and improve. Ultimately, my goal is to create valuable resources that can save time and increase productivity for anyone who uses them.
