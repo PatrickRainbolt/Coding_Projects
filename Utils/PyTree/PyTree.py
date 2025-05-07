@@ -8,8 +8,8 @@ import argparse  # for parsing command-line arguments
 
 VERSION = "1.0.0"  # Global version variable
 
+# Return a formatted string of permissions, owner, group, size, and modification time for a file.
 def format_file_info(path):
-    """Return a formatted string of permissions, owner, group, size, and modification time for a file."""
     st = os.lstat(path)
     mode = stat.filemode(st.st_mode)
     nlink = st.st_nlink
@@ -19,8 +19,8 @@ def format_file_info(path):
     mtime = time.strftime("%b %e %H:%M", time.localtime(st.st_mtime))
     return f"[{mode} {nlink} {uid} {gid:8} {size:6} {mtime}]"
 
+# Recursively print tree structure with file info starting from `path`.
 def walk_directory(path, prefix=""):
-    """Recursively print tree structure with file info starting from `path`."""
     entries = sorted(os.listdir(path))
     last_index = len(entries) - 1
 
