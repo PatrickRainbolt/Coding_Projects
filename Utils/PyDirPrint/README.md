@@ -52,6 +52,30 @@ python3 PyDirPrint.py <directory> [options]
    python3 PyDirPrint.py -V
    ```
 
+## Example of Output
+   ```bash
+> python3 PyDirPrint.py Coding -S '*.txt'
+
+------------------------------------------------------------------------------------------
+[-rw-rw-r-- 1 digipat digipat  1024 May  7 10:14] /home/user/Coding/Fibonacci_Sequence.txt
+------------------------------------------------------------------------------------------
+The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones. It commonly
+starts with 0 and 1. This sequence appears in many areas of mathematics and computer science, as well as in nature,
+such as the arrangement of leaves or the spirals of shells.
+
+In Python, the Fibonacci sequence can be implemented in several ways. A common method is using iteration with a loop,
+where two variables track the previous values and are updated as the loop progresses. Another method is using
+recursion, where a function calls itself with smaller inputs to build the sequence. Recursion is elegant but less
+efficient for large inputs unless memoization is used.
+
+Here is an example of a simple iterative Fibonacci generator in Python:
+   def fibonacci(n):
+       a, b = 0, 1
+       for _ in range(n):
+           print(a, end=' ')
+           a, b = b, a + b
+   ```
+
 ## Licensing
 
 This suite is released under the [MIT License](LICENSE.md).
