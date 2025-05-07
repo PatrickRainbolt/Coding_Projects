@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-
-import os      # for path, file, and directory operations
-import stat    # for interpreting file mode/permissions
-import pwd     # to get the username from a user ID
-import grp     # to get the group name from a group ID
-import time    # to format file modification time
+import os        # for path, file, and directory operations
+import stat      # for interpreting file mode/permissions
+import pwd       # to get the username from a user ID
+import grp       # to get the group name from a group ID
+import time      # to format file modification time
 import argparse  # for parsing command-line arguments
 
 VERSION = "1.0.0"  # Global version variable
